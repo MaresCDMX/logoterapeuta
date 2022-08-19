@@ -23,6 +23,9 @@
   --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
   /* Images */
   --bg-cover: url('./assets/banner.jpg');
+  --bg-image1: url('./assets/bgsocial1.jpeg');
+  --bg-image2: url('./assets/bgsocial4.jpeg');
+  --bg-image3: url('./assets/bgsocial6.jpeg');
   --logo: url('./assets/Logoterapia.svg');
 }
 
@@ -437,7 +440,29 @@ ul {
   padding: 5em 0;
 }
 
-/*------  Aegncy Arear Style ------*/
+/*------  Digital Area Style ------*/
+
+#site-main .social-area>.grid {
+  column-gap: 10em;
+}
+
+#site-main .social-area .grid-images {
+  display: grid;
+  grid-template-columns: repeat(16, minmax(10px, 1fr));
+  grid-template-rows: repeat(8, minmax(100px, 1fr));
+}
+
+#site-main .social-area .grid-images .item-one {
+  background: var(--text-gray);
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background: var(--bg-image1) no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
 
 
 /*------  Aegncy Arear Style ------*/
