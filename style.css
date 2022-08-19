@@ -24,7 +24,7 @@
   /* Images */
   --bg-cover: url('./assets/banner.jpg');
   --bg-image1: url('./assets/bgsocial1.jpeg');
-  --bg-image2: url('./assets/bgsocial4.jpeg');
+  --bg-image2: url('./assets/bgsocial2.jpeg');
   --bg-image3: url('./assets/bgsocial6.jpeg');
   --logo: url('./assets/Logoterapia.svg');
 }
@@ -459,6 +459,26 @@ ul {
   grid-row-start: 2;
   grid-row-end: 5;
   background: var(--bg-image1) no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
+
+#site-main .social-area .grid-images .item-two {
+  background: var(--text-gray);
+  grid-column-start: 9;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background: var(--bg-image2) no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
+
+#site-main .social-area .grid-images .item-three {
+  grid-area: 3/4/8/14;
+  background: var(--bg-image3) no-repeat;
   background-size: cover;
   border-radius: 8px;
   filter: blur(1px);
