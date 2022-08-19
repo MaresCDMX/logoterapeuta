@@ -44,6 +44,15 @@ ul {
   list-style: none;
 }
 
+tag {
+  position: absolute;
+  background: tomato;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
 /*------  Global Clases  ------*/
 
 .text-dark {
