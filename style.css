@@ -238,8 +238,8 @@ tag::before {
 }
 
 .py-10 {
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .px-5 {
