@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Marketing</title>
+    <title>Logoterapia</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
@@ -340,27 +340,32 @@
               <a href="#home" class="link">Home</a>
             </li>
             <li>
-              <a href="#about" class="link">About</a>
+              <a href="#about" class="link">Acerca de mí</a>
             </li>
             <li>
-              <a href="#services" class="link">Services</a>
+              <a href="#social" class="link">Compromiso Social</a>
             </li>
             <li>
-              <a href="#work" class="link">Work</a>
+              <a href="#skills" class="link">Certificaciones</a>
             </li>
             <li>
-              <a href="#contact" class="link">Contact</a>
+              <a href="#articles" class="link">Artículos</a>
+            </li>
+            <li>
+              <a href="#contact" class="link">Contacto</a>
             </li>
           </ul>
         </div>
 
         <div class="flex-initial">
           <ul class="flex">
-            <button
-              class="btn btn-primary btn-shadow text-white text-uppercase"
-            >
-              Contacto
-            </button>
+            <a href="#contact">
+              <button
+                class="btn btn-primary btn-shadow text-white text-uppercase"
+              >
+                Contacto
+              </button>
+            </a>
           </ul>
         </div>
       </nav>
@@ -370,7 +375,7 @@
     <!-- @@@@@@@@@@@@  MainSection @@@@@@@@@@@@@ -->
     <main id="site-main">
       <!-- banner area -->
-      <section class="banner-area font-family">
+      <section class="banner-area font-family" id="home">
         <div class="container mx-auto banner-title">
           <div class="title">
             <span class="d-inline btn btn-primary bg-gradient-peach text-red"
@@ -401,7 +406,7 @@
 
       <!-- @@@@@@@@@@@@  Agency Area @@@@@@@@@@@@@ -->
 
-      <section class="agency-area">
+      <section class="agency-area" id="about">
         <div class="container mx-auto text-center font-family">
           <span class="text-red">Acerca de mí</span>
           <div class="area-title">
@@ -458,7 +463,7 @@
       <!-- @@@@@@@@@@@@  /Agency Area @@@@@@@@@@@@@ -->
 
       <!-- @@@@@@@@@@@@  Life Area @@@@@@@@@@@@@ -->
-      <section class="container mx-auto social-area">
+      <section class="container mx-auto social-area" id="social">
         <div class="grid cols-1 lg-cols-2 text-center md-text-left">
           <div class="grid-images">
             <div class="item-one"></div>
@@ -498,7 +503,7 @@
       <!-- @@@@@@@@@@@@  /Life Area @@@@@@@@@@@@@ -->
 
       <!-- @@@@@@@@@@@@  Skills Area @@@@@@@@@@@@@ -->
-      <section class="container mx-auto skills-area">
+      <section class="container mx-auto skills-area" id="skills">
         <div class="grid cols-1 lg-cols-2">
           <div class="grid-one text-center md-text-left">
             <span class="d-inline btn btn-primary bg-gradient-peach text-red"
@@ -556,7 +561,7 @@
 
       <!-- @@@@@@@@@@@@  Articles Area @@@@@@@@@@@@@ -->
 
-      <section class="article-area container mx-auto py-10">
+      <section class="article-area container mx-auto py-10" id="articles">
         <div class="area-title text-center font-family">
           <span class="text-red">Artículos Recientes</span>
           <h1 class="text-lg text-dark">Artículos</h1>
@@ -713,6 +718,11 @@
       <!-- @@@@@@@@@@@@  /Contact Area @@@@@@@@@@@@@ -->
     </main>
     <!-- @@@@@@@@@@@@  /Main Section @@@@@@@@@@@@@ -->
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!-- scripts -->
     <script src="main.js"></script>

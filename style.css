@@ -8865,7 +8865,37 @@ tag::before {
 }
 
 
-/*------  Articles Arear Style ------*/
+/*========== SCROLL UP ==========*/
+
+.scrollup {
+  position: fixed;
+  bottom: -20%;
+  right: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--text-indigo);
+  opacity: .8;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  cursor: pointer;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover {
+  background-color: var(--bg-yellow);
+
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: var(--bg-purple)
+}
+
+/* Show scroll */
+
+.show-scroll {
+  bottom: 5rem;
+}
 
 
 /*------  Articles Arear Style ------*/
