@@ -10,6 +10,7 @@
   --text-dark2: #1A3760D4;
   --text-red: #ff4d6d;
   --text-indigo: #5819d7;
+  --input-color: hsl(var(--hue-color), 70%, 96%);
   --box-sahdow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
   --bg-blue: rgb(294, 243, 255);
   --bg-red: rgb(254, 247, 252);
@@ -23,11 +24,26 @@
   --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
   /* Images */
   --bg-cover: url('./assets/banner.jpg');
+  --bg-contact: url('./assets/location.jpeg');
   --bg-image1: url('./assets/bgsocial1.jpeg');
   --bg-image2: url('./assets/bgsocial2.jpeg');
   --bg-image3: url('./assets/bgsocial6.jpeg');
   --logo: url('./assets/Logoterapia.svg');
+
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 }
+
+
 
 
 
@@ -325,6 +341,10 @@ tag::before {
 
 @media (min-width: 280px) {
 
+  .container__contact {
+    width: 95%;
+  }
+
   .container {
     width: 80%;
   }
@@ -345,6 +365,10 @@ tag::before {
     color: var(--text-dark);
     text-align: center;
   }
+
+  .contact__form {
+    width: 100%;
+  }
 }
 
 /* for large screen sm (640 px) */
@@ -352,6 +376,10 @@ tag::before {
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+  }
+
+  .container__contact {
+    width: 90%;
   }
 
   .sm-text-xl {
@@ -374,6 +402,10 @@ tag::before {
     color: var(--text-dark);
     text-align: center;
   }
+
+  .contact__form {
+    width: 100%;
+  }
 }
 
 /* for large screen md (768 px) */
@@ -381,6 +413,10 @@ tag::before {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .container__contact {
+    width: 95%;
   }
 
   .md-text-left {
@@ -414,6 +450,10 @@ tag::before {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+  }
+
+  .container__contact {
+    width: 95%;
   }
 
   #nav .toggle-btn>button {
@@ -458,6 +498,10 @@ tag::before {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+
+  .container__contact {
+    width: 95%;
   }
 
   #nav {
@@ -537,7 +581,7 @@ tag::before {
 /*------  Aegncy Arear Style ------*/
 
 #site-main .agency-area {
-  padding: 5em 0;
+  padding: 5rem 0;
 }
 
 /*------  Digital Area Style ------*/
@@ -8741,4 +8785,90 @@ tag::before {
 }
 
 
-/*------  Aegncy Arear Style ------*/
+/*------  Articles Arear Style ------*/
+
+#site-main .article-area .grid {
+  column-gap: 5em;
+}
+
+#site-main .article-area .card article {
+  border-radius: 10px;
+}
+
+/*==================== CONTACT ME ====================*/
+
+.section__contact {
+  padding: 2rem 0 4rem;
+}
+
+.contact__container {
+  row-gap: 2rem;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
+
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+
+.contact__label {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: var(--mb-0-25);
+}
+
+.contact__inputs {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-dark);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  padding: .25rem .5rem .5rem 0;
+}
+
+#site-main .contact-area {
+  width: 100%;
+  position: relative;
+  background: var(--bg-contact);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-radius: 10px;
+  filter: blur(0.5px);
+  z-index: -9;
+}
+
+.padding_special {
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+
+/*------  Articles Arear Style ------*/
+
+
+/*------  Articles Arear Style ------*/
+
+
+/*------  Articles Arear Style ------*/

@@ -596,13 +596,11 @@
               <img src="./assets/articles/article4.jpeg" class="w-100" alt="" />
               <div class="py-5 px-5">
                 <span class="text-gray"
-                  >Seminario Vínculos, Crecimiento interior y Sentido de
-                  vida.</span
+                  >Crecimiento interior y Sentido de vida.</span
                 >
                 <a href="#">
                   <h2 class="text-dark">
-                    Vive con una sensación de mayor sentido, fortalecer tu
-                    autoconfianza.
+                    Vive con una sensación de mayor sentido y autoconfianza.
                   </h2>
                 </a>
               </div>
@@ -612,6 +610,107 @@
       </section>
 
       <!-- @@@@@@@@@@@@  /Articles Area @@@@@@@@@@@@@ -->
+
+      <!-- @@@@@@@@@@@@  Contact Area @@@@@@@@@@@@@ -->
+
+      <section class="container mx-auto contact section__contact" id="contact">
+        <div class="area-title text-center font-family">
+          <span class="text-red">Envíame un mensaje</span>
+          <h1 class="text-lg text-dark">Contacto</h1>
+        </div>
+
+        <div class="contact__container container__contact grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Llamame</h3>
+                <span class="contact__subtitle">55 5555 5555</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">logoterapia@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Ubicación</h3>
+                <span class="contact__subtitle">México - CDMX </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid lg-cols-2 font-family">
+            <div class="grid-one text-center md-text-left contact-area"></div>
+            <form
+              id="form"
+              class="container__contact contact_form grid grid-two"
+              action="https://formspree.io/f/xgeqwyyg"
+              method="POST"
+            >
+              <div class="contact__inputs grid">
+                <div class="contact__content">
+                  <label for="name" class="contact__label">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="contact__inputs"
+                  />
+                </div>
+                <div class="contact__content">
+                  <label for="email" class="contact__label">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="contact__inputs"
+                  />
+                </div>
+              </div>
+              <div class="contact__content">
+                <label for="project" class="contact__label">Project</label>
+                <input
+                  id="project"
+                  name="project"
+                  type="text"
+                  class="contact__inputs"
+                />
+              </div>
+              <div class="contact__content">
+                <label for="message" class="contact__label">Message</label>
+                <textarea
+                  cols="0"
+                  rows="7"
+                  id="message"
+                  name="message"
+                  class="contact__inputs"
+                ></textarea>
+              </div>
+
+              <div class="py-5 padding_special">
+                <button
+                  class="btn btn-primary btn-shadow text-white text-uppercase"
+                  type="submit"
+                  value="Send"
+                >
+                  Send Message
+                  <i class="uil uil-message button__icon"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@@@@@@@@@@@  /Contact Area @@@@@@@@@@@@@ -->
     </main>
     <!-- @@@@@@@@@@@@  /Main Section @@@@@@@@@@@@@ -->
 
