@@ -324,6 +324,11 @@ tag::before {
 /*------  Media Query ------*/
 
 @media (min-width: 280px) {
+
+  .container {
+    width: 80%;
+  }
+
   #site-main .social-area .grid-images .item-one {
     background: var(--text-gray);
     grid-column-start: 2 !important;
