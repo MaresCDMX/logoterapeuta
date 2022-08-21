@@ -8882,13 +8882,13 @@ tag::before {
 }
 
 .scrollup:hover {
-  background-color: var(--bg-yellow);
+  background-color: var(--text-indigo-dark);
 
 }
 
 .scrollup__icon {
   font-size: 1.5rem;
-  color: var(--bg-purple)
+  color: var(--text-white)
 }
 
 /* Show scroll */

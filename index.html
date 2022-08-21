@@ -706,7 +706,7 @@
                   type="submit"
                   value="Send"
                 >
-                  Send Message
+                  Enviar mensaje
                   <i class="uil uil-message button__icon"></i>
                 </button>
               </div>
@@ -723,6 +723,21 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+    <!--==================== Email Js Link ====================-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!--==================== Sweet Alert ====================-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("z9uI7NhhakQl2Aptf");
+      })();
+    </script>
 
     <!-- scripts -->
     <script src="main.js"></script>

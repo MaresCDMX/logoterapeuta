@@ -31,7 +31,6 @@ if (toggle) {
   }, 2000);
 });*/
 
-
 /*==================== SHOW SCROLL UP ====================*/
 
 function scrollUp() {
@@ -41,3 +40,43 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+/*==================== Form  ====================*/
+
+const $form = document.querySelector("#form");
+
+$form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const form = new FormData(this);
+  if (
+    form.get("project") === "" ||
+    form.get("name") === "" ||
+    form.get("email") === "" ||
+    form.get("message") === ""
+  ) {
+    swal({
+      title: "Error!",
+      text: "Los campos del formulario deben llenarse!",
+      icon: "warning",
+    });
+  } else {
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    this.reset();
+    let traductor = $checkbox.checked;
+    if (traductor == true) {
+      swal({
+        title: "Gracias!",
+        text: "Tu mensaje ha sido enviado!",
+        icon: "success",
+      });
+    }
+  }
+}
