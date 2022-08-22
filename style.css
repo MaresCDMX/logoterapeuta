@@ -8969,8 +8969,11 @@ tag::before {
   font-family: var(--font-family);
   font-size: 1em;
   padding: 0 2em;
-
 }
 
+.btn-go:hover {
+  background: var(--text-dark2);
+  color: var(--text-white);
+}
 
 /*------  Articles Arear Style ------*/
