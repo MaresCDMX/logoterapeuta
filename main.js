@@ -61,3 +61,9 @@ async function handleSubmit(event) {
     }
   }
 }
+
+// rellax js code
+
+var rellax = new Rellax(".rellax", {
+  center: true,
+});
