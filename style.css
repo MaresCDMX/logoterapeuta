@@ -392,7 +392,7 @@ tag::before {
   }
 
   .banner-area .banner-title {
-    height: 70vh;
+    height: 75vh;
     padding-top: 16rem;
   }
 
@@ -407,7 +407,7 @@ tag::before {
   }
 
   .banner-area .banner-title {
-    height: 70vh !important;
+    height: 75vh;
     padding-top: 16rem;
   }
 }
