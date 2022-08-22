@@ -391,8 +391,24 @@ tag::before {
     max-width: 766px;
   }
 
+  .banner-area .banner-title {
+    height: 55vh;
+    padding-top: 16rem;
+  }
+
   #go {
     justify-content: center;
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    max-width: 912px;
+  }
+
+  .banner-area .banner-title {
+    height: 70vh !important;
+    padding-top: 16rem;
   }
 }
 
