@@ -380,6 +380,20 @@ tag::before {
   .contact__form {
     width: 100%;
   }
+
+  #footer .grid button.btn-go {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 766px) {
+  .container {
+    max-width: 766px;
+  }
+
+  #go {
+    justify-content: center;
+  }
 }
 
 /* for large screen sm (640 px) */
@@ -417,6 +431,8 @@ tag::before {
   .contact__form {
     width: 100%;
   }
+
+
 }
 
 /* for large screen md (768 px) */
@@ -457,6 +473,10 @@ tag::before {
   #greeting p {
     color: var(--text-gray);
     text-align: left;
+  }
+
+  #go {
+    justify-content: left;
   }
 }
 
